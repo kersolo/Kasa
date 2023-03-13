@@ -1,0 +1,29 @@
+.test {
+  height: 200px;
+  /* background: url(../assets//Banner.svg); */
+
+  /* background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../assets//Banner.svg); */
+  background-image: linear-gradient(
+      rgba(124, 124, 124, 0.212),
+      rgba(124, 124, 124, 0.226)
+    ),
+    url(../assets//Banner.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+.phrase {
+  margin: auto;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 48px;
+  color: #ffffff;
+}

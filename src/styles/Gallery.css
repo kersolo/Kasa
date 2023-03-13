@@ -1,0 +1,36 @@
+.gallery {
+  /* position: absolute; */
+  /* width: 1240px;
+  height: 829px; */
+  /* width: 100%; */
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #ff6060;
+  border-radius: 5px;
+  height: 250px;
+  width: 250px;
+  margin: 20px;
+}
+.img {
+  border-radius: 5px;
+  height: 80%;
+  width: 100%;
+}
+.li {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  list-style-type: none;
+  display: flex;
+  width: 80%;
+  /* margin: -50px 0; */
+  color: #f7f7f7;
+}
