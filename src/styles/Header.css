@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
 }
-nav li {
+.nav-link {
   color: #ff6060;
   padding-left: 50px;
   padding-right: 20px;
@@ -20,34 +20,3 @@ nav li {
   font-weight: 500;
   font-size: 24px;
 }
-
-/* .header-container {
-  width: 80%;
-  height: 68px;
-  left: 100px;
-  top: 40px;
-}
-
-.nav-container {
-  list-style-type: none;
-
-  left: 75.08%;
-
-  top: 25%;
-  bottom: 25%;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 142.6%;
-  display: flex;
-  justify-content: flex-end;
-
-  align-items: flex-end;
-  text-align: right;
-  color: #ff6060;
-}
-nav li {
-  margin-left: 50px;
-  margin-top: -50px;
-} */

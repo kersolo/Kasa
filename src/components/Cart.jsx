@@ -1,19 +1,13 @@
+import { Link } from 'react-router-dom';
 import '../styles/Gallery.css';
 
 export default function Cart({ loc }) {
   return (
     <div className="card">
-      <img className="img" src={loc.cover} alt="" />
-      <li className="li">{loc.title}</li>
+      <Link to="/FicheLogement/:id" className="card-link">
+        <img className="imgCard" src={loc.cover} alt="" />
+        <li className="loc-title">{loc.title}</li>
+      </Link>
     </div>
   );
 }
-
-// export default function Cart({ loc }) {
-//   return (
-//     <div className="gal">
-//       <img className="cart" src={loc.cover} alt="" />
-//       <li className="cart-title">{loc.title}</li>
-//     </div>
-//   );
-// }

@@ -1,24 +1,14 @@
 // import BannerIMG from '../assets/Banner.svg';
 import '../styles/Banner.css';
 
-export default function Footer() {
+export default function Banner({ src, text, alt }) {
   //state
   //comportement
   //affichage (render)
   return (
-    <div className="test">
-      <h3 className="phrase">Chez vous, partout ailleurs </h3>
+    <div className="banner">
+      <img src={src} alt={alt} className="imgBanner" />
+      <div className="text"> {text} </div>
     </div>
   );
 }
-
-// export default function Footer() {
-//   //state
-//   //comportement
-//   //affichage (render)
-//   return (
-//     <div className="test">
-//       <img src={BannerIMG} alt="Paysage" />
-//     </div>
-//   );
-// }

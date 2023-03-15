@@ -1,0 +1,35 @@
+.bloc-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  font-family: 'Montserrat';
+  background-color: #ff6060;
+  color: white;
+  font-weight: 700;
+  width: 80%;
+  margin: 10px;
+  font-size: 24px;
+}
+.open {
+  background: #f7f7f7;
+  color: #ff6060;
+  font-family: 'Montserrat';
+  /* width: 100%; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.title-img {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.iconopen {
+  transform: rotate(180deg);
+  transition: all 0.8ms;
+}
