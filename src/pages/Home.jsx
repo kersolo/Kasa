@@ -4,6 +4,7 @@ import Banner from '../components/Banner';
 import Gallery from '../components/Gallery';
 import '../styles/Pages.css';
 import ImgBannerHome from '../assets/Banner.svg';
+import logo from '../assets/logo.svg';
 
 function Home() {
   //state

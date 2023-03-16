@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Carrousel from '../components/Carrousel';
 import SectionLoc from '../components/SectionLoc';
+import Footer from '../components/Footer';
 import Section from '../components/Section';
 import '../styles/Pages.css';
 
@@ -27,6 +28,7 @@ export default function FicheLogement() {
           <Section title="Description" description={infos.description} />
           <Section title="Equipements" description={infos.equipments} />
         </div>
+        <Footer />
       </div>
     );
 }

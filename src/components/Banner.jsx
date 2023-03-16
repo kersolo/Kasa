@@ -1,4 +1,3 @@
-// import BannerIMG from '../assets/Banner.svg';
 import '../styles/Banner.css';
 
 export default function Banner({ src, text, alt }) {

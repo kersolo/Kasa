@@ -20,6 +20,10 @@ export default function Header() {
     </header>
   );
 }
+//////////////////////////////////
+// import { Link } from 'react-router-dom';
+// import logo from '../assets/logo.svg';
+// import '../styles/Header.css';
 
 // export default function Header() {
 //   //state
@@ -29,8 +33,12 @@ export default function Header() {
 //     <header className="header-container">
 //       <img className="logo" src={logo} alt="Kasa" />
 //       <nav className="nav-container">
-//         <li className="accueil">Accueil</li>
-//         <li className="A-Propos">A Propos</li>
+//         <Link to="/" className="nav-link">
+//           Accueil
+//         </Link>
+//         <Link to="/APropos" className="nav-link">
+//           A Propos
+//         </Link>
 //       </nav>
 //     </header>
 //   );

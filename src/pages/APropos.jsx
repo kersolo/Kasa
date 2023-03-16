@@ -3,7 +3,6 @@ import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import Section from '../components/Section';
 import '../styles/Pages.css';
-
 import ImgBannerAPropos from '../assets/BannerAPropos.svg';
 
 export default function APropos() {

@@ -2,28 +2,31 @@ import { Navigate, useParams } from 'react-router-dom';
 import logementList from '../Datas/Logements.json';
 import '../styles/sectionloc.css';
 import VectorRed from '../assets/VectorRed.svg';
+import Tags from '../components/Tags';
 
 export default function SectionLoc() {
   const params = useParams();
   const infos = logementList.find(({ id }) => id === params.id);
 
-  console.log(infos);
-
   return (
     <div className="sectionloc">
-      <h2>{infos.title}</h2>
-      <h3>{infos.location} </h3>
-      <ul> {infos.tags} </ul>
       <div>
-        {infos.host.name}
-        <img src={infos.host.picture} alt="" />
+        <h2>{infos.title}</h2>
+        <h5>{infos.location} </h5>
+        <Tags />
       </div>
-      ///// placer dans un composant avec condition
       <div>
-        <img src={VectorRed} alt="" />
-        {infos.rating}
+        <div className="nomphoto">
+          <p className="nomPerson"> {infos.host.name}</p>
+          <img className="imageperson" src={infos.host.picture} alt="" />
+        </div>
+        ///// placer dans un composant avec condition
+        <div>
+          <img src={VectorRed} alt="" />
+          {infos.rating}
+        </div>
+        ///// placer dans un composant avec condition
       </div>
-      ///// placer dans un composant avec condition
     </div>
   );
 }
