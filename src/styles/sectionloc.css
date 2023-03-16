@@ -1,0 +1,11 @@
+.sectionloc {
+  width: 100%;
+  height: 200px;
+}
+
+.sectionFicheLoc {
+  margin-bottom: 300px;
+  margin-top: 300px;
+  display: flex;
+  align-items: baseline;
+}

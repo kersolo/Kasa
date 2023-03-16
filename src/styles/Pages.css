@@ -2,3 +2,35 @@
   margin: 20px;
   padding: 0;
 }
+
+.PageError {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+.titleError {
+  color: #ff6060;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 288px;
+  margin: 0;
+}
+
+.textError {
+  color: #ff6060;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.LinkError {
+  color: #ff6060;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 80px;
+}
