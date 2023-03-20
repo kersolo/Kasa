@@ -3,6 +3,7 @@ import logementList from '../Datas/Logements.json';
 import '../styles/sectionloc.css';
 import VectorRed from '../assets/VectorRed.svg';
 import Tags from '../components/Tags';
+import Stars from '../components/Stars';
 
 export default function SectionLoc() {
   const params = useParams();
@@ -20,12 +21,10 @@ export default function SectionLoc() {
           <p className="nomPerson"> {infos.host.name}</p>
           <img className="imageperson" src={infos.host.picture} alt="" />
         </div>
-        ///// placer dans un composant avec condition
+
         <div>
-          <img src={VectorRed} alt="" />
-          {infos.rating}
+          <Stars starsnumber={infos.rating} />
         </div>
-        ///// placer dans un composant avec condition
       </div>
     </div>
   );
