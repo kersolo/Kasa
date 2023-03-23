@@ -1,4 +1,4 @@
-.sectionloc {
+.sectionloc-container {
   width: 100%;
   height: 200px;
   display: flex;
@@ -7,18 +7,18 @@
 }
 
 .sectionFicheLoc {
-  margin-bottom: 300px;
-  margin-top: 300px;
+  /* margin-bottom: 300px; */
+  /* margin-top: 300px; */
   display: flex;
   align-items: baseline;
 }
 
-.ulLoc {
+.tags-container {
   padding: 0;
   display: flex;
   list-style-type: none;
 }
-.liloc {
+.tags {
   background-color: #ff6060;
   color: white;
   font-family: 'Montserrat';
@@ -30,19 +30,19 @@
   margin: 5px;
 }
 
-.nomphoto {
+.owner {
   display: flex;
   justify-content: flex-end;
   margin: 50px 0;
 }
-.imageperson {
+.owner-photo {
   border-radius: 50px;
   width: 64px;
   height: 64px;
   margin-left: 20px;
 }
 
-.nomPerson {
+.owner-name {
   width: 20%;
   text-align: end;
 }

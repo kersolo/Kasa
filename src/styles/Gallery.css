@@ -1,4 +1,4 @@
-.gallery {
+.gallery-container {
   background-color: #f7f7f7;
   border-radius: 25px;
   display: flex;
@@ -15,12 +15,12 @@
   width: 250px;
   margin: 20px;
 }
-.imgCard {
+.img-card {
   border-radius: 5px;
   height: 80%;
   width: 100%;
 }
-.loc-title {
+.accommodation-title {
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 18px;

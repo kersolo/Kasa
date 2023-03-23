@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import APropos from './pages/APropos';
 import FicheLogement from './pages/FicheLogement';
-import PageError from './pages/pageError';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
   //state
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/APropos" element={<APropos />} />
         <Route path="/FicheLogement/:id" element={<FicheLogement />} />
-        <Route path="/*" element={<PageError />} />
+        <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </div>
   );

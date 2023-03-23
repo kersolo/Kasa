@@ -1,10 +1,11 @@
-.bloc-section {
+.section-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  list-style-type: none;
 }
-.close {
+.section-close {
   font-family: 'Montserrat';
   background-color: #ff6060;
   color: white;
@@ -14,7 +15,7 @@
   font-size: 24px;
   cursor: pointer;
 }
-.open {
+.section-open {
   background: #f7f7f7;
   color: #ff6060;
   font-family: 'Montserrat';
@@ -25,12 +26,12 @@
   cursor: pointer;
 }
 
-.title-img {
+.title-icon {
   padding: 10px;
   display: flex;
   justify-content: space-between;
 }
-.iconopen {
+.icon-open {
   transform: rotate(180deg);
   transition: all 0.8ms;
 }

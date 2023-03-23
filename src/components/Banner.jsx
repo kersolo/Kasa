@@ -1,13 +1,13 @@
+import React from 'react';
 import '../styles/Banner.css';
 
-export default function Banner({ src, text, alt }) {
-  //state
-  //comportement
-  //affichage (render)
+function Banner({ src, text, alt }) {
   return (
     <div className="banner">
-      <img src={src} alt={alt} className="imgBanner" />
+      <img key={src.id} src={src} alt={alt} className="img-banner" />
       <div className="text"> {text} </div>
     </div>
   );
 }
+
+export default Banner;

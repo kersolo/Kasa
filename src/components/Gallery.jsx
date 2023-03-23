@@ -1,15 +1,17 @@
-import { useState } from 'react';
-import Cart from './Cart';
+import React from 'react';
+import Cards from './Cards';
 import '../styles/Gallery.css';
-const logementList = require('../Datas/Logements.json');
+const accommodationList = require('../Datas/Logements.json');
 
-export default function Gallery() {
-  const [data, setData] = useState(logementList);
+function Gallery() {
+  const data = accommodationList;
   return (
-    <div className="gallery">
-      {data.map((loc) => (
-        <Cart loc={loc} />
+    <div className="gallery-container">
+      {data.map((accommodations) => (
+        <Cards key={accommodations.id} accommodations={accommodations} />
       ))}
     </div>
   );
 }
+
+export default Gallery;
