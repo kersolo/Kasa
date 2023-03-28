@@ -1,34 +1,27 @@
 .gallery-container {
   background-color: #f7f7f7;
   border-radius: 25px;
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 60px;
+  justify-content: center;
   margin-bottom: 30px;
+  padding: 50px;
 }
 
-.card {
-  background-color: #ff6060;
-  border-radius: 5px;
-  height: 250px;
-  width: 250px;
-  margin: 20px;
+.card-link {
+  display: flex;
+  align-items: end;
 }
+
 .img-card {
-  border-radius: 5px;
-  height: 80%;
   width: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
 }
 .accommodation-title {
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 18px;
-  list-style-type: none;
-  display: flex;
-  width: 80%;
+  position: absolute;
+  width: 10%;
   color: #f7f7f7;
-}
-.card-link {
-  text-decoration: none;
+  margin: 10px;
 }

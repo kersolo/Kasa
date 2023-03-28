@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import APropos from './pages/APropos';
 import FicheLogement from './pages/FicheLogement';
 import ErrorPage from './pages/ErrorPage';
+import './styles/Pages.css';
 
 function App() {
   //state

@@ -19,12 +19,16 @@ function FicheLogement() {
       <li key={index}>{equipment}</li>
     ));
     return (
-      <div className="page">
-        <Header />
-        <Carrousel slides={infos.pictures} />
-        <AccomodationInfos />
-        <Section title="Description" description={infos.description} />
-        <Section title="Equipements" description={equipmentList} />
+      <div>
+        <div className="page">
+          <Header />
+          <Carrousel slides={infos.pictures} />
+          <AccomodationInfos />
+          <div className="section-ficheLogement">
+            <Section title="Description" description={infos.description} />
+            <Section title="Equipements" description={equipmentList} />
+          </div>
+        </div>
         <Footer />
       </div>
     );

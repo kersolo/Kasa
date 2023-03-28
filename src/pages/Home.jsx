@@ -7,14 +7,16 @@ import ImgBannerHome from '../assets/bannerHome.svg';
 
 function Home() {
   return (
-    <div className="page">
-      <Header />
-      <Banner
-        src={ImgBannerHome}
-        text={'Chez vous, partout et ailleurs'}
-        alt="Paysage"
-      />
-      <Gallery />
+    <div>
+      <div className="page">
+        <Header />
+        <Banner
+          src={ImgBannerHome}
+          text={'Chez vous, partout et ailleurs'}
+          alt="Paysage"
+        />
+        <Gallery />
+      </div>
       <Footer />
     </div>
   );

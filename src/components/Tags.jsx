@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/sectionloc.css';
+import '../styles/accomodationInfos.css';
 
 function Tags({ infos }) {
   const Tags = infos.tags.map((text, index) => (

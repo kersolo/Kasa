@@ -1,10 +1,18 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 import Cards from './Cards';
 import '../styles/Gallery.css';
-const accommodationList = require('../Datas/Logements.json');
 
 function Gallery() {
-  const data = accommodationList;
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get('/Logements.json')
+      .then((res) => setData(res.data))
+      .catch((res) => console.log('mince!!'));
+  }, []);
+
   return (
     <div className="gallery-container">
       {data.map((accommodations) => (
