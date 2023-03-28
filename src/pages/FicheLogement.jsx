@@ -26,7 +26,7 @@ function FicheLogement() {
           <AccomodationInfos />
           <div className="section-ficheLogement">
             <Section title="Description" description={infos.description} />
-            <Section title="Equipements" description={equipmentList} />
+            <Section title="Équipements" description={equipmentList} />
           </div>
         </div>
         <Footer />

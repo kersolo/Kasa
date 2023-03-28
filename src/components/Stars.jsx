@@ -9,14 +9,9 @@ function Stars({ starsnumber }) {
     <div className="stars-container">
       {stars.map((level) =>
         starsnumber >= level ? (
-          <img
-            className="starssize"
-            key={level.toString()}
-            src={StarsRed}
-            alt=""
-          />
+          <img className="star" key={level.toString()} src={StarsRed} alt="" />
         ) : (
-          <img key={level.toString()} src={StarsGrey} alt="" />
+          <img className="star" key={level.toString()} src={StarsGrey} alt="" />
         )
       )}
     </div>

@@ -9,19 +9,19 @@ export default function SectionLoc() {
   const infos = logementList.find(({ id }) => id === params.id);
 
   return (
-    <div className="sectionloc-container">
-      <div className="infosLoc">
+    <div className="accomodation-container">
+      <div className="infos-and-tags">
         <div className="title-and-loc">
-          <h2>{infos.title}</h2>
-          <p>{infos.location} </p>
+          <p className="infos-title">{infos.title}</p>
+          <p className="infos-location">{infos.location} </p>
         </div>
+        <Tags infos={infos} />
+      </div>
+      <div className="owner-and-starsnumber">
         <div className="owner">
           <p className="owner-name"> {infos.host.name}</p>
           <img className="owner-photo" src={infos.host.picture} alt="" />
         </div>
-      </div>
-      <div className="tags-and-stars">
-        <Tags infos={infos} />
         <Stars starsnumber={infos.rating} />
       </div>
     </div>
@@ -41,18 +41,17 @@ export default function SectionLoc() {
 
 //   return (
 //     <div className="sectionloc-container">
-//       <div>
-//         <h2>{infos.title}</h2>
-//         <h5>{infos.location} </h5>
-//         <Tags infos={infos} />
-//       </div>
-//       <div>
+//       <div className="infosLoc">
+//         <div className="title-and-loc">
+//           <h2>{infos.title}</h2>
+//           <p>{infos.location} </p>
+//         </div>
 //         <div className="owner">
 //           <p className="owner-name"> {infos.host.name}</p>
 //           <img className="owner-photo" src={infos.host.picture} alt="" />
 //         </div>
-
-//         <div>
+//         <div className="tags-and-stars">
+//           <Tags infos={infos} />
 //           <Stars starsnumber={infos.rating} />
 //         </div>
 //       </div>

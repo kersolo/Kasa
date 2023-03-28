@@ -10,14 +10,15 @@ function Section({ title, description }) {
     <div className="section-close" onClick={() => setOpen(false)}>
       <div className="title-icon">
         {title}
-        <img className="icon-open" src={iconOpenClose} alt="icon pour fermer" />
+        <img src={iconOpenClose} alt="icon pour fermer" />
       </div>
       <div className="section-open">{description}</div>
     </div>
   ) : (
     <div className="section-close" onClick={() => setOpen(true)}>
       <div className="title-icon">
-        {title} <img src={iconOpenClose} alt="icon pour ouvrir" />
+        {title}{' '}
+        <img className="icon-open" src={iconOpenClose} alt="icon pour ouvrir" />
       </div>
     </div>
   );

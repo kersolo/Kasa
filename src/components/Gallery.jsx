@@ -10,7 +10,7 @@ function Gallery() {
     axios
       .get('/Logements.json')
       .then((res) => setData(res.data))
-      .catch((res) => console.log('mince!!'));
+      .catch((err) => console.log(err));
   }, []);
 
   return (

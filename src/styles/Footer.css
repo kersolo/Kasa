@@ -8,10 +8,15 @@
   align-items: center;
   margin-top: 50px;
 }
-.footer-container img {
-  margin: 20px;
+.copyright-kasa {
+  width: 513px;
+  height: 46px;
+  margin: 40px 0 -30px 0;
 }
-
+.logo-footer {
+  width: 122px;
+  height: 39.44px;
+}
 @media screen and (max-width: 500px) {
   .copyright-kasa {
     width: 50%;

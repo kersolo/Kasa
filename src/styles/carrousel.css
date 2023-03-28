@@ -31,9 +31,39 @@
 .textCar {
   position: absolute;
   display: flex;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
   font-size: 18px;
   color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .arrows {
+    width: 75%;
+  }
+  .slideStyle {
+    height: 390px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .arrows {
+    width: 86%;
+  }
+  .arrows img {
+    width: 25px;
+  }
+  .slideStyle {
+    height: 255px;
+  }
+  .textCar {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .arrows {
+    width: 83%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .arrows {
+    width: 75%;
+  }
 }

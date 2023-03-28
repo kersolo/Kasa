@@ -3,7 +3,7 @@ import '../styles/accomodationInfos.css';
 
 function Tags({ infos }) {
   const Tags = infos.tags.map((text, index) => (
-    <li key={index} className="tags">
+    <li key={index} className="tag">
       {text}
     </li>
   ));
