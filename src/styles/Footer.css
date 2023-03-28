@@ -11,3 +11,12 @@
 .footer-container img {
   margin: 20px;
 }
+
+@media screen and (max-width: 500px) {
+  .copyright-kasa {
+    width: 50%;
+  }
+  .logo-footer {
+    width: 50%;
+  }
+}
