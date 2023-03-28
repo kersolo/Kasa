@@ -1,9 +1,11 @@
 .banner {
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
+  margin: 60px 0 40px 0;
+}
+.banner-APropos {
+  height: 223px;
   margin: 60px 0 40px 0;
 }
 .img-banner {
@@ -29,9 +31,11 @@
 @media screen and (max-width: 768px) {
   .banner {
     justify-content: flex-start;
-  }
-  .img-banner {
     height: 111px;
+  }
+
+  .img-banner {
+    height: 100%;
   }
   .text {
     font-size: 24px;

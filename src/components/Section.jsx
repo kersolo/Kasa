@@ -17,7 +17,7 @@ function Section({ title, description }) {
   ) : (
     <div className="section-close" onClick={() => setOpen(true)}>
       <div className="title-icon">
-        {title}{' '}
+        {title}
         <img className="icon-open" src={iconOpenClose} alt="icon pour ouvrir" />
       </div>
     </div>

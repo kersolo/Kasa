@@ -60,4 +60,16 @@
     margin: 15px 0;
     width: 100%;
   }
+  .section-close {
+    width: 100%;
+    font-size: 13px;
+  }
+  .section-open {
+    font-size: 12px;
+  }
+
+  .title-icon img {
+    width: 15px;
+    height: 20px;
+  }
 }

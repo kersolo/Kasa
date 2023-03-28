@@ -5,6 +5,7 @@ import Section from '../components/Section';
 import Footer from '../components/Footer';
 import ImgBannerAPropos from '../assets/bannerAPropos.svg';
 import '../styles/Pages.css';
+import '../styles/Banner.css';
 
 function APropos() {
   return (
