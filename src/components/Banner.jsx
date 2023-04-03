@@ -4,14 +4,14 @@ import ImgBannerAPropos from '../assets/bannerAPropos.svg';
 
 function Banner({ src, text, alt }) {
   return src !== ImgBannerAPropos ? (
-    <div className="banner">
+    <section className="banner">
       <img className="img-banner" key={src.id} src={src} alt={alt} />
       <div className="text"> {text} </div>
-    </div>
+    </section>
   ) : (
-    <div className="banner-APropos">
+    <section className="banner-APropos">
       <img className="img-banner" key={src.id} src={src} alt={alt} />
-    </div>
+    </section>
   );
 }
 

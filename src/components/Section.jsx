@@ -4,10 +4,21 @@ import iconOpenClose from '../assets/iconOpenClose.svg';
 import '../styles/section.css';
 
 function Section({ title, description }) {
+  //state
   const [open, setOpen] = useState(false);
 
+  //comportement
+  const handleOpen = () => {
+    if (open) {
+      setOpen(false);
+    } else {
+      setOpen(true);
+    }
+  };
+
+  //render
   return open ? (
-    <div className="section-close" onClick={() => setOpen(false)}>
+    <div className="section-close" onClick={handleOpen}>
       <div className="title-icon">
         {title}
         <img src={iconOpenClose} alt="icon pour fermer" />
@@ -15,7 +26,7 @@ function Section({ title, description }) {
       <div className="section-open">{description}</div>
     </div>
   ) : (
-    <div className="section-close" onClick={() => setOpen(true)}>
+    <div className="section-close" onClick={handleOpen}>
       <div className="title-icon">
         {title}
         <img className="icon-open" src={iconOpenClose} alt="icon pour ouvrir" />
@@ -36,25 +47,18 @@ export default Section;
 //   const [open, setOpen] = useState(false);
 
 //   return open ? (
-//     <div className="section-container">
-//       <div className="section-close" onClick={() => setOpen(false)}>
-//         <div className="title-icon">
-//           {title}
-//           <img
-//             className="icon-open"
-//             src={iconOpenClose}
-//             alt="icon pour fermer"
-//           />
-//         </div>
-//         <div className="section-open">{description}</div>
+//     <div className="section-close" onClick={() => setOpen(false)}>
+//       <div className="title-icon">
+//         {title}
+//         <img src={iconOpenClose} alt="icon pour fermer" />
 //       </div>
+//       <div className="section-open">{description}</div>
 //     </div>
 //   ) : (
-//     <div className="section-container">
-//       <div className="section-close" onClick={() => setOpen(true)}>
-//         <div className="title-icon">
-//           {title} <img src={iconOpenClose} alt="icon pour ouvrir" />
-//         </div>
+//     <div className="section-close" onClick={() => setOpen(true)}>
+//       <div className="title-icon">
+//         {title}
+//         <img className="icon-open" src={iconOpenClose} alt="icon pour ouvrir" />
 //       </div>
 //     </div>
 //   );

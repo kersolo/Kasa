@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import Data from '../Datas/Data';
-import Cards from './Cards';
+import Thumb from './Thumb';
 import '../styles/Gallery.css';
 
 function Gallery() {
@@ -17,7 +17,7 @@ function Gallery() {
   return (
     <div className="gallery-container">
       {data.map((accommodations) => (
-        <Cards key={accommodations.id} accommodations={accommodations} />
+        <Thumb key={accommodations.id} accommodations={accommodations} />
       ))}
     </div>
   );
