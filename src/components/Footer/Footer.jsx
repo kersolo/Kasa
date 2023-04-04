@@ -1,9 +1,8 @@
-import React from 'react';
-import logoFooter from '../assets/logoFooter.svg';
-import logoCopyright from '../assets/copyrightKasa.svg';
-import '../styles/Footer.css';
+import logoFooter from '../../assets/logoFooter.svg';
+import logoCopyright from '../../assets/copyrightKasa.svg';
+import './footer.css';
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer-container">
       <img className="logo-footer" src={logoFooter} alt="Kasa" />
@@ -11,5 +10,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

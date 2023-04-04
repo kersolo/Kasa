@@ -31,30 +31,6 @@
   width: 64px;
   height: 64px;
 }
-.tags-container {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-}
-.tag {
-  background-color: #ff6060;
-  color: white;
-  font-size: 14px;
-  border-radius: 20px;
-  padding: 5px 25px;
-  margin: 0 10px 5px 0;
-}
-.stars-container {
-  display: flex;
-  flex-wrap: nowrap;
-  height: 30px;
-  /* margin: auto; */
-  margin-top: 10px;
-}
-.star {
-  padding: 0 4px;
-}
 
 @media screen and (max-width: 768px) {
   .accomodation-container {
@@ -65,14 +41,6 @@
   }
   .infos-location {
     font-size: 14px;
-  }
-
-  .tag {
-    font-size: 10px;
-  }
-  .stars-container {
-    height: 15px;
-    margin: auto;
   }
   .owner-and-starsnumber {
     display: flex;

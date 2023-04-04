@@ -1,0 +1,20 @@
+.tags-container {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.tag {
+  background-color: #ff6060;
+  color: white;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 5px 25px;
+  margin: 0 10px 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .tag {
+    font-size: 10px;
+  }
+}

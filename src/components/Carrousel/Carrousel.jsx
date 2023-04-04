@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import arrowRight from '../assets/arrowRight.svg';
-import arrowLeft from '../assets/arrowLeft.svg';
-import '../styles/carrousel.css';
+import { useState } from 'react';
+import arrowRight from '../../assets/arrowRight.svg';
+import arrowLeft from '../../assets/arrowLeft.svg';
+import './carrousel.css';
 
-function Carrousel({ slides }) {
+export default function Carrousel({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
@@ -19,7 +19,7 @@ function Carrousel({ slides }) {
   };
 
   return slides.length > 1 ? (
-    <div className="CarrouselContainer">
+    <article className="CarrouselContainer">
       <div className="arrows">
         <img
           className="arrowLeft"
@@ -40,9 +40,9 @@ function Carrousel({ slides }) {
           {currentIndex + 1}/{slides.length}
         </p>
       </div>
-    </div>
+    </article>
   ) : (
-    <div className="CarrouselContainer">
+    <article className="CarrouselContainer">
       <div className="slidesNumber">
         <img className="slideStyle" src={slides[currentIndex]} alt="" />
 
@@ -50,8 +50,6 @@ function Carrousel({ slides }) {
           {currentIndex + 1}/{slides.length}
         </p>
       </div>
-    </div>
+    </article>
   );
 }
-
-export default Carrousel;

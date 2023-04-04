@@ -1,21 +1,8 @@
-.gallery-container {
-  background-color: #f7f7f7;
-  border-radius: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 30px;
-  padding: 15px 0;
-}
-
 .thumb {
   width: 30%;
   margin: 1.2%;
   display: flex;
   justify-content: space-between;
-}
-
-.thumb-link {
   display: flex;
   align-items: flex-end;
 }
@@ -43,17 +30,17 @@
 @media screen and (max-width: 768px) {
   .thumb {
     width: 90%;
-    /* height: 225px; */
-  }
-}
-@media screen and (min-width: 768px) {
-  .thumb {
-    height: 340px;
+    height: 44vw;
   }
 }
 @media screen and (max-width: 400px) {
   .accommodation-title {
     width: 50%;
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .thumb {
+    height: 24vw;
   }
 }

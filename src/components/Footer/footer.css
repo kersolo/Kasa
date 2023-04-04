@@ -17,7 +17,7 @@
   width: 122px;
   height: 39.44px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .copyright-kasa {
     width: 50%;
   }

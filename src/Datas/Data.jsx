@@ -1,4 +1,4 @@
-async function Data() {
+export default async function Data() {
   try {
     const res = await fetch('/Logements.json');
     const data = await res.json();
@@ -7,5 +7,3 @@ async function Data() {
     console.log(err);
   }
 }
-
-export default Data;

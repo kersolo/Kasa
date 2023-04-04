@@ -1,26 +1,17 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Banner from '../components/Banner';
-import Gallery from '../components/Gallery';
-import '../styles/Pages.css';
+import Banner from '../components/Banner/Banner';
+import Gallery from '../components/Gallery/Gallery';
 import ImgBannerHome from '../assets/bannerHome.svg';
 
 function Home() {
   return (
-    <body>
-      <div className="page">
-        <Header />
-        <section>
-          <Banner
-            src={ImgBannerHome}
-            text={'Chez vous, partout et ailleurs'}
-            alt="Paysage"
-          />
-          <Gallery />
-        </section>
-      </div>
-      <Footer />
-    </body>
+    <main>
+      <Banner
+        src={ImgBannerHome}
+        text={'Chez vous, partout et ailleurs'}
+        alt="Paysage"
+      />
+      <Gallery />
+    </main>
   );
 }
 

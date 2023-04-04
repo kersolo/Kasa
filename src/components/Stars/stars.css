@@ -1,0 +1,17 @@
+.stars-container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 30px;
+  /* margin: auto; */
+  margin-top: 10px;
+}
+.star {
+  padding: 0 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .stars-container {
+    height: 15px;
+    margin: auto;
+  }
+}

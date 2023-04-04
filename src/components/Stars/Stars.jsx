@@ -1,9 +1,8 @@
-import React from 'react';
-import StarsRed from '../assets/starsRed.svg';
-import StarsGrey from '../assets/starsGrey.svg';
-import '../styles/accomodationInfos.css';
+import StarsRed from '../../assets/starsRed.svg';
+import StarsGrey from '../../assets/starsGrey.svg';
+import './stars.css';
 
-function Stars({ starsnumber }) {
+export default function Stars({ starsnumber }) {
   const stars = [1, 2, 3, 4, 5];
   return (
     <div className="stars-container">
@@ -17,5 +16,3 @@ function Stars({ starsnumber }) {
     </div>
   );
 }
-
-export default Stars;

@@ -1,18 +1,14 @@
-import React from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import Data from '../Datas/Data';
-import Header from '../components/Header';
-import Carrousel from '../components/Carrousel';
-import AccomodationInfos from '../components/AccomodationInfos';
-import Section from '../components/Section';
-import Footer from '../components/Footer';
-import '../styles/Pages.css';
+import Carrousel from '../components/Carrousel/Carrousel';
+import AccomodationInfos from '../components/AccomodationInfos/AccomodationInfos';
+import Section from '../components/Section/Section';
 
 function FicheLogement() {
+  const [data, setData] = useState();
   const params = useParams();
   const navigate = useNavigate();
-  const [data, setData] = useState();
 
   useEffect(() => {
     const getData = async () => {
@@ -21,7 +17,7 @@ function FicheLogement() {
       const infos = res.find(({ id }) => id === params.id);
       setData(infos);
       if (infos === undefined) {
-        navigate('/*', { state: { message: "Can't get data" } });
+        navigate('/404');
       }
     };
     getData();
@@ -29,24 +25,19 @@ function FicheLogement() {
 
   return (
     data && (
-      <body className="page">
-        <Header />
-        <section>
-          <Carrousel slides={data.pictures} />
-          <AccomodationInfos infos={data} />
-          <div className="section-ficheLogement">
-            <Section title="Description" description={data.description} />
-            <Section
-              title="Équipements"
-              description={data.equipments.map((equipment, index) => (
-                <li key={index}>{equipment}</li>
-              ))}
-            />
-          </div>
-        </section>
-
-        <Footer />
-      </body>
+      <main>
+        <Carrousel slides={data.pictures} />
+        <AccomodationInfos infos={data} />
+        <article className="section-ficheLogement">
+          <Section title="Description" description={data.description} />
+          <Section
+            title="Équipements"
+            description={data.equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          />
+        </article>
+      </main>
     )
   );
 }
