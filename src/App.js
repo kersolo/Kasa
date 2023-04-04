@@ -10,7 +10,6 @@ function App() {
         <Header />
         <Router />
       </div>
-
       <Footer />
     </>
   );
