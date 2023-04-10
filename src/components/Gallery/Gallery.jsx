@@ -5,12 +5,13 @@ import './gallery.css';
 
 export default function Gallery() {
   const [data, setData] = useState([]);
+
   useEffect(() => {
-    const fetchData = async () => {
-      const data = await Data();
-      setData(data);
+    const getData = async () => {
+      const res = await Data();
+      setData(res);
     };
-    fetchData();
+    getData();
   }, []);
 
   return (

@@ -7,7 +7,7 @@ function Home() {
     <main>
       <Banner
         src={ImgBannerHome}
-        text={'Chez vous, partout et ailleurs'}
+        text="Chez vous, partout et ailleurs"
         alt="Paysage"
       />
       <Gallery />

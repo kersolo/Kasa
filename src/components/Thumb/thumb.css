@@ -5,6 +5,10 @@
   justify-content: space-between;
   display: flex;
   align-items: flex-end;
+  border-radius: 10px;
+}
+.thumb:hover {
+  box-shadow: 0px 2px 8px 2px rgb(161, 155, 155);
 }
 
 .img-thumb {
@@ -21,6 +25,8 @@
   margin: 10px;
   font-size: 18px;
 }
+
+/* **************************** */
 
 @media screen and (max-width: 1000px) {
   .thumb {

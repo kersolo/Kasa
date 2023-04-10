@@ -9,6 +9,8 @@
   padding: 0 4px;
 }
 
+/* **************************** */
+
 @media screen and (max-width: 768px) {
   .stars-container {
     height: 15px;

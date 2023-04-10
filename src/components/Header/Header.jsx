@@ -8,12 +8,15 @@ export default function Header() {
     <header className="header-container">
       <img className="logo-header" src={logoHeader} alt="Kasa" />
       <nav className="nav-container">
-        <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
+        <Link
+          to="/"
+          className={location.pathname === '/' ? 'active' : 'nav-link'}
+        >
           Accueil
         </Link>
         <Link
           to="/A-Propos"
-          className={location.pathname === '/A-Propos' ? 'active' : ''}
+          className={location.pathname === '/A-Propos' ? 'active' : 'nav-link'}
         >
           A Propos
         </Link>

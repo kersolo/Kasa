@@ -51,6 +51,8 @@
   width: 45%;
 }
 
+/* **************************** */
+
 @media screen and (max-width: 768px) {
   .section-ficheLogement {
     flex-direction: column;

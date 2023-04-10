@@ -13,7 +13,6 @@ function FicheLogement() {
   useEffect(() => {
     const getData = async () => {
       const res = await Data();
-      res.map(() => setData(data));
       const infos = res.find(({ id }) => id === params.id);
       setData(infos);
       if (infos === undefined) {
@@ -21,7 +20,7 @@ function FicheLogement() {
       }
     };
     getData();
-  });
+  }, [params, navigate]);
 
   return (
     data && (
