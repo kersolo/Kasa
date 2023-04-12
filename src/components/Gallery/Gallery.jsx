@@ -3,6 +3,7 @@ import Data from '../../Datas/Data';
 import Thumb from '../Thumb/Thumb';
 import './gallery.css';
 
+//composant Gallery utilisé sur la page d'accueil affichant tout les logements proposés à la location//
 export default function Gallery() {
   const [data, setData] = useState([]);
 

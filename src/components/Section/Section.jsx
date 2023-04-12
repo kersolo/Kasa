@@ -2,6 +2,7 @@ import { useState } from 'react';
 import iconOpenClose from '../../assets/iconOpenClose.svg';
 import './section.css';
 
+//composant Section utilisé sur les pages à propos et fiche logement//
 export default function Section({ title, description }) {
   //state
   const [open, setOpen] = useState(false);

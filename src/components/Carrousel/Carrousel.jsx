@@ -3,6 +3,7 @@ import arrowRight from '../../assets/arrowRight.svg';
 import arrowLeft from '../../assets/arrowLeft.svg';
 import './carrousel.css';
 
+//composant Carrousel affichant les différentes photos du logement sur la page fiche logement//
 export default function Carrousel({ slides }) {
   //state
   const [currentIndex, setCurrentIndex] = useState(0);

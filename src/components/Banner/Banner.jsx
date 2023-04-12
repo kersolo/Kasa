@@ -1,6 +1,7 @@
 import ImgBannerAPropos from '../../assets/bannerAPropos.svg';
 import './banner.css';
 
+//composant Banner utilisé sur la page d'accueil et la page à propos//
 export default function Banner({ src, text, alt }) {
   return src !== ImgBannerAPropos ? (
     <aside className="banner">

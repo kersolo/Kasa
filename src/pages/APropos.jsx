@@ -2,6 +2,7 @@ import Banner from '../components/Banner/Banner';
 import Section from '../components/Section/Section';
 import ImgBannerAPropos from '../assets/bannerAPropos.svg';
 
+//composant APropos affichant les informations du site//
 function APropos() {
   return (
     <main>

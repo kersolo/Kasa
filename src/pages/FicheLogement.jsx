@@ -5,6 +5,7 @@ import Carrousel from '../components/Carrousel/Carrousel';
 import AccomodationInfos from '../components/AccomodationInfos/AccomodationInfos';
 import Section from '../components/Section/Section';
 
+//composant FicheLogement contenant les informations des logements//
 function FicheLogement() {
   const [data, setData] = useState();
   const params = useParams();

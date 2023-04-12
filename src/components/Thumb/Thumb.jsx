@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './thumb.css';
 
+//composant Thumb représentant chaque logmements//
 export default function Thumb({ accommodations }) {
   const id = accommodations.id;
 

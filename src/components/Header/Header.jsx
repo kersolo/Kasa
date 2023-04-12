@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import logoHeader from '../../assets/logoHeader.svg';
 import './header.css';
 
+//composant Header utilisé sur toutes les pages//
 export default function Header() {
   const location = useLocation();
   return (

@@ -2,6 +2,7 @@ import Tags from '../Tags/Tags';
 import Stars from '../Stars/Stars';
 import './accomodationInfos.css';
 
+//composant AccomodationInfos affichant certaines informations du logement (situé entre le carrousel et les section sur la fiche logement)//
 export default function AccomodationInfos({ infos }) {
   return (
     <article className="accomodation-container">
